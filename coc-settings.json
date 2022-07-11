@@ -1,0 +1,5 @@
+{
+	"python.venvPath": "C:/Users/timoh/AppData/Local/pypoetry/Cache/virtualenvs",
+	"python.formatting.provider": "black",
+	"coc.preferences.formatOnSaveFiletypes": ["python"]
+}
