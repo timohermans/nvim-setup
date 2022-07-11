@@ -6,12 +6,14 @@ set backupdir=C:/temp/vim
 set directory=C:/temp/vim
 set undodir=C:/temp/vim
 
-let &shell = has('win32') ? 'powershell' : 'pwsh'
-set shellquote= shellpipe=\| shellxquote=
-set shellcmdflag=-NoLogo\ -NoProfile\ -ExecutionPolicy\ RemoteSigned\ -Command
-set shellredir=\|\ Out-File\ -Encoding\ UTF8
+" let &shell = has('win32') ? 'powershell' : 'pwsh'
+" set shellquote= shellpipe=\| shellxquote=
+" set shellcmdflag=-NoLogo\ -NoProfile\ -ExecutionPolicy\ RemoteSigned\ -Command
+" set shellredir=\|\ Out-File\ -Encoding\ UTF8
 
 " COC SETTINGS
+
+let g:coc_global_extensions = ['coc-pyright', 'coc-json', 'coc-htmldjango', 'coc-html']
 
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -108,6 +110,7 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Remap keys for applying codeAction to the current buffer.
 nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>ca <Plug>(coc-codeaction-line)
 " Apply AutoFix to problem on the current line.
 nmap <leader>qf  <Plug>(coc-fix-current)
 
